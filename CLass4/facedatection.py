@@ -6,18 +6,19 @@ cap = cv2.VideoCapture(-1)
 face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_alt.xml")
 
 while True:
-	ret,frame = cap.read() 
-	gray_frame = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY) 
+	ret,frame = cap.read() #it is to read the frame from the video and Ret is used to obtain value from the camera frame either true or false
+	gray_frame = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)  # because opencv works in grayscale
 
-	if ret == False:
+	if ret == False:       #if there is no frames in the video then return false and come out of the loop
 		continue
 
-	faces = face_cascade.detectMultiScale(gray_frame,1.3,5)        
-	if len(faces) == 0:
+	faces = face_cascade.detectMultiScale(gray_frame,1.3,5)         #use that inbuild library and we will insert gray_frames
+ #1.3 means that the filter size will reduce by 30 percent in the next loop
+	if len(faces) == 0: #if there is no face then come out of the loop 
 		continue
 
 	for face in faces:
-		x,y,w,h = face
+		x,y,w,h = face    #points of
 
 		offset = 10  #	An offset value to adjust the loaded points.
 		face_offset = frame[y-offset:y+h+offset,x-offset:x+w+offset]
