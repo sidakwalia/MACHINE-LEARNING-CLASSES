@@ -1,0 +1,26 @@
+#to pull any file from someone's repository
+
+git pull 
+
+#To push any file of your own local directory on your github repository
+
+1.git init
+
+2.git add file_name or folder_name
+
+3.git commit -m "message" (this means you are telling abt the change on github)
+
+4.git push -u origin master(that means to push your local directory on your github repository.
+
+
+If you want to check the status of which files have been added to your git 
+
+git status
+
+
+
+
+
+
+
+
