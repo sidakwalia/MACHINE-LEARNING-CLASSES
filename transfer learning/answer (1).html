@@ -1,0 +1,108 @@
+<!DOCTYPE html><html>
+        <div class="main">
+            </h2><button class="accordion active"><b>Question:</b></button>
+            
+                <html>
+                    <head></head>
+                    <body>
+                    <div class="ugc-base question-body-text">
+			<div class><p><img class="mceBlock" src="https://media.cheggcdn.com/study/286/286825eb-086f-4415-a740-530deef9fa54/f72dee4b-a073-4ef2-9afb-bbfa1efe18cd.png" border="0" alt="uploaded image" aria-describedby="ikp"></p>
+</div>
+			<span class="transcribed-text">Show transcribed image text</span> 
+			
+		</div>
+                    </body>
+                    </html>
+                            </h2><button class="accordion active"><b>Answer</b></button>
+                            <html>
+                    <head></head> 
+                    <body> 
+                    
+                    <div><img src="https://media.cheggcdn.com/study/d90/d902277d-6384-4f54-8fa4-08a7e4c6cbe2/2a7445bf-e5f6-4a2d-8f14-c708f5cc69cf.png" alt></div>
+
+                    
+                
+                    </body>
+                    </html>
+                    <script>
+                        var acc = document.getElementsByClassName("accordion");
+                        var i;
+                        for (i = 0; i < acc.length; i++) {
+                            acc[i].addEventListener("click", function () {
+    
+                                this.nextElementSibling.classList.toggle('collapse')
+                                this.nextElementSibling.classList.toggle('expand')
+    
+                            });
+                        }
+                    </script></body><head><meta name="viewport" content="width=device-width, initial-scale=1"><style>
+    
+                        .accordion {
+                            background-color: #fc2403;
+                            color: #00000;
+                            cursor: pointer;
+                            padding: 15px;
+                            width: 100%;
+                            border: solid black 1px;
+                            text-align: left;
+                            font-size: 15px;
+                            height:auto;
+                            overflow:hidden;
+                            filter: brightness(100%);
+                            transition:filter 0.15s;
+    
+                        }
+    
+                        .accordion:hover {
+                            filter: brightness(125%);
+                            border: solid black;
+                        }
+    
+                        .panel {
+                            background-color: white;
+                            height:auto;
+                            opacity: 1;
+                            padding: 0 18px;
+                            max-height:500em;
+                            border-style: groove;
+                            transition: max-height 0.5s ease;
+                            overflow:hidden;
+                        }
+    
+                        .panel.colapse {
+                            max-height:0em;
+                            border-style: none;
+                        }
+    
+                        .panel.expand{
+                            max-height:500em;
+                            border-style: groove;
+                        }
+    
+                        .answer {
+                            height:auto;
+                            max-height:500em;
+                            transition: max-height 0.5s ease;
+                        }
+    
+                        .answer.colapse {
+                            max-height:0em;
+    
+                        }
+    
+                        .answer.expand{
+                            max-height:500em;
+    
+                        }
+    
+                        .question {
+                            padding: 0 18px;
+                            border: groove;
+                            overflow:hidden;
+                        }
+                        .main {
+                            background-color: white;
+                        }
+    
+    
+                    </style></head>
